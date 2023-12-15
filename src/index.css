@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root,
+#root,
+#docs-root {
+  --text: #e9f4f9;
+  --background: #071419;
+  --primary: #9bd0e2;
+  --secondary: #80262d;
+  --accent: #c7b543;
+}
+
+@layer components{
+    .grid-wrap {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, max(300px));
+          grid-gap:1rem;
+        }
+}
