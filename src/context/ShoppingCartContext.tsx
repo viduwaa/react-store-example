@@ -1,4 +1,5 @@
 import { ReactNode, createContext, useContext, useState } from "react";
+import  {ShoppingCart}  from "../components/ShoppingCart";
 
 type ShoppingCartProviderProps = {
   children: ReactNode;
@@ -10,10 +11,13 @@ type CartItem = {
 };
 
 type ShoppingCartContext = {
+  toggleMenu:()=>void
   getItemQuantitiy: (id: number) => number;
   increaeCartQuantity: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
+  cartQuantitiy:number
+  cartItems:CartItem[]
 };
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext);
@@ -23,8 +27,17 @@ export function useShoppingCart() {
 }
 
 export  function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
-  const [cartItems, SetCartItems] = useState<CartItem[]>([]);
 
+  const [cartItems, SetCartItems] = useState<CartItem[]>([]);
+  
+  const cartQuantitiy = cartItems.reduce((quantity,item)=> item.quantitiy +quantity,0)
+
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+   
   function getItemQuantitiy(id: number) {
     return cartItems.find((item) => item.id === id)?.quantitiy || 0;
   }
@@ -74,9 +87,14 @@ export  function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
         increaeCartQuantity,
         decreaseCartQuantity,
         removeFromCart,
+        cartItems,
+        cartQuantitiy,
+        toggleMenu
       }}
     >
+      
       {children}
+      <ShoppingCart isOpen={isOpen} toggleMenu={toggleMenu}/>
     </ShoppingCartContext.Provider>
   );
 }
