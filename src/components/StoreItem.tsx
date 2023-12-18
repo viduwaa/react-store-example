@@ -12,12 +12,12 @@ type StoreItemProps = {
 
 export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
   const {
-    getItemQuantitiy,
+    getItemQuantity,
     increaeCartQuantity,
     decreaseCartQuantity,
     removeFromCart,
   } = useShoppingCart();
-  const quantity = getItemQuantitiy(id);
+  const quantity = getItemQuantity(id);
   return (
     <>
       <img src={imgUrl} alt="" className="h-[200px] object-cover p-2" />
