@@ -12,22 +12,22 @@ export function NavBar() {
   
   return (
     <>
-      <div className="container sticky m-auto flex h-[50px] items-center  bg-teal-500 p-8 drop-shadow-xl transition-all">
-        <nav className="me-auto flex h-full items-center gap-10 text-[1.2rem]">
+      <div className="container sticky m-auto flex h-[50px] items-center  bg-teal-500 md:p-8 p-2 drop-shadow-xl transition-all">
+        <nav className="me-auto flex h-full items-center md:gap-10 gap-3 text-[1.2rem]">
           <NavLink
-            className="w-[60px] transition-all duration-200  hover:text-[20px] hover:text-gray-600"
+            className="md:w-[60px] transition-all duration-200  hover:text-[20px] hover:text-gray-600"
             to="/"
           >
             Home
           </NavLink>
           <NavLink
-            className="w-[60px] transition-all duration-200 hover:text-[20px] hover:text-gray-600"
+            className="md:w-[60px] transition-all duration-200 hover:text-[20px] hover:text-gray-600"
             to="/store"
           >
             Store
           </NavLink>
           <NavLink
-            className="w-[60px] transition-all duration-200 hover:text-[20px] hover:text-gray-600"
+            className="md:w-[60px] transition-all duration-200 hover:text-[20px] hover:text-gray-600"
             to="/about"
           >
             About
