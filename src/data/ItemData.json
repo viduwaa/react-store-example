@@ -3,36 +3,36 @@
     "id": 1,
     "name": "Laptop Model: XXXX-XX",
     "price": 260000,
-    "imgUrl": "src/assets/img/laptop-1.jpg"
+    "imgUrl": "public/img/laptop-1.jpg"
   },
   {
     "id": 2,
     "name": "Laptop Model: XXXX-XX",
     "price": 240000,
-    "imgUrl": "src/assets/img/laptop-2.jpg"
+    "imgUrl": "public/img/laptop-2.jpg"
   },
   {
     "id": 3,
     "name": "Laptop Model: XXXX-XX",
     "price": 180000,
-    "imgUrl": "src/assets/img/laptop-3.jpg"
+    "imgUrl": "public/img/laptop-3.jpg"
   },
   {
     "id": 4,
     "name": "Laptop Model: XXXX-XX",
     "price": 220000,
-    "imgUrl": "src/assets/img/laptop-4.jpg"
+    "imgUrl": "public/img/laptop-4.jpg"
   },
   {
     "id": 5,
     "name": "Laptop Model: XXXX-XX",
     "price": 310000,
-    "imgUrl": "src/assets/img/laptop-5.jpg"
+    "imgUrl": "public/img/laptop-5.jpg"
   },
   {
     "id": 6,
     "name": "Laptop Model: XXXX-XX",
     "price": 260000,
-    "imgUrl": "src/assets/img/laptop-6.jpg"
+    "imgUrl": "public/img/laptop-6.jpg"
   }
 ]
