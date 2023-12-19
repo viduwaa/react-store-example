@@ -16,7 +16,7 @@ export function NavBar() {
           <div className="flex h-full w-full items-center md:gap-3 gap-5 md:m-auto ml-3">
             <NavLink
               className="transition-all duration-200 hover:text-[20px] hover:text-gray-600 md:w-[60px]"
-              to="/store"
+              to="/"
             >
               Store
             </NavLink>

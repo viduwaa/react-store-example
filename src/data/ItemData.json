@@ -1,38 +1,38 @@
 [
-    {
-        "id":1,
-        "name":"Laptop Model: XXXX-XX",
-        "price":260000,
-        "imgUrl":"/img/Acer-Gaming.jpg"
-    },
-    {
-        "id":2,
-        "name":"Laptop Model: XXXX-XX",
-        "price":240000,
-        "imgUrl":"/img/Asus-ExpertBook-B1502CB.jpg"
-    },
-    {
-        "id":3,
-        "name":"Laptop Model: XXXX-XX",
-        "price":180000,
-        "imgUrl":"/img/Lenovo-Ideapad-3.jpg"
-    },
-    {
-        "id":4,
-        "name":"Laptop Model: XXXX-XX",
-        "price":220000,
-        "imgUrl":"/img/Lenovo-IdeaPad-Slim-5-–-15ALC05-R5.jpg"
-    },
-    {
-        "id":5,
-        "name":"Laptop Model: XXXX-XX",
-        "price":310000,
-        "imgUrl":"/img/Lenovo-Legion-Gaming-Pro-5-16ARX8-Ryzen-9.jpg"
-    },
-    {
-        "id":6,
-        "name":"Laptop Model: XXXX-XX",
-        "price":260000,
-        "imgUrl":"/img/MSI-Katana-GF76-11UC.jpg"
-    }
+  {
+    "id": 1,
+    "name": "Laptop Model: XXXX-XX",
+    "price": 260000,
+    "imgUrl": "src/assets/img/laptop-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Laptop Model: XXXX-XX",
+    "price": 240000,
+    "imgUrl": "src/assets/img/laptop-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Laptop Model: XXXX-XX",
+    "price": 180000,
+    "imgUrl": "src/assets/img/laptop-3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Laptop Model: XXXX-XX",
+    "price": 220000,
+    "imgUrl": "src/assets/img/laptop-4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Laptop Model: XXXX-XX",
+    "price": 310000,
+    "imgUrl": "src/assets/img/laptop-5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Laptop Model: XXXX-XX",
+    "price": 260000,
+    "imgUrl": "src/assets/img/laptop-6.jpg"
+  }
 ]

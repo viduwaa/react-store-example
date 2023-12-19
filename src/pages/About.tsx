@@ -6,24 +6,30 @@ import { MdOutlineSelfImprovement } from "react-icons/md";
 import { useEffect, useState } from "react";
 
 export function About() {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(true);
     }, 100);
 
-    return () => clearTimeout(timeout); 
+    return () => clearTimeout(timeout);
   }, []);
-    
+
   return (
     <>
       <header>
-        <h1 className="m-2 md:text-[3rem] text-[2rem] font-bold">About This Learning Project</h1>
+        <h1 className="m-2 text-[2rem] font-bold md:text-[3rem]">
+          About This Learning Project
+        </h1>
       </header>
-      <main className={`fade-in ${isVisible ? 'opacity-100' : 'opacity-0'} transition-all m-2`}>
-        <section className="border-b border-black mb-4 pb-5">
-          <h2 className="flex  md:text-[2rem] text-[1.8rem]em] text-[1.5rem] font-semibold md:gap-3 gap-2">
+      <main
+        className={`fade-in ${
+          isVisible ? "opacity-100" : "opacity-0"
+        } m-2 transition-all`}
+      >
+        <section className="mb-4 border-b border-black pb-5">
+          <h2 className="text-[1.8rem]em]  flex gap-2 text-[1.5rem] font-semibold md:gap-3 md:text-[2rem]">
             • Cart Management Expertise{" "}
             <span className="flex items-center gap-1 text-blue-600">
               <FaReact />
@@ -48,8 +54,8 @@ export function About() {
           </p>
         </section>
 
-        <section className="border-b border-black mb-4 pb-5">
-          <h2 className="flex  md:text-[2rem] text-[1.8rem] font-semibold md:gap-3 gap-2">
+        <section className="mb-4 border-b border-black pb-5">
+          <h2 className="flex  gap-2 text-[1.8rem] font-semibold md:gap-3 md:text-[2rem]">
             • TypeScript Integration
             <span className="flex items-center gap-1 text-blue-600">
               <SiTypescript />
@@ -63,8 +69,8 @@ export function About() {
           </p>
         </section>
 
-        <section className="border-b border-black mb-4 pb-5">
-          <h2 className="flex  md:text-[2rem] text-[1.8rem] font-semibold md:gap-3 gap-2">
+        <section className="mb-4 border-b border-black pb-5">
+          <h2 className="flex  gap-2 text-[1.8rem] font-semibold md:gap-3 md:text-[2rem]">
             • Tailwind CSS Styling
             <span className="flex items-center gap-1 text-blue-600">
               <SiTailwindcss color="#21BBBF" />
@@ -79,8 +85,8 @@ export function About() {
           </p>
         </section>
 
-        <section className="border-b border-black mb-4 pb-5">
-          <h2 className="flex  md:text-[2rem] text-[1.8rem] font-semibold md:gap-3 gap-2">
+        <section className="mb-4 border-b border-black pb-5">
+          <h2 className="flex  gap-2 text-[1.8rem] font-semibold md:gap-3 md:text-[2rem]">
             • Embracing Continuous Learning
             <span className="flex items-center gap-1 text-blue-600">
               <MdOutlineSelfImprovement />
@@ -93,6 +99,7 @@ export function About() {
             journey.
           </p>
         </section>
+        
       </main>
     </>
   );
