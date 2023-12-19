@@ -1,15 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.root,
-#root,
-#docs-root {
-  --text: #e9f4f9;
-  --background: #071419;
-  --primary: #9bd0e2;
-  --secondary: #80262d;
-  --accent: #c7b543;
+html{
+  font-family: 'Mukta', sans-serif;
 }
 
 @layer components{
@@ -19,3 +14,9 @@
           grid-gap:1rem;
         }
 }
+
+#navlink a.active{
+  scale: 1.3;
+  font-weight: 700;
+}
+
